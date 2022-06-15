@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: #7159c1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.result {
+  visibility: hidden;
+  height: fit-content;
+  min-height: 100px;
+  background-color: white;
+  width: 800px;
+  margin-top: 50px;
+  border-radius: 6px;
+  display: flex;
+  transition: 2s;
+}
+
+.result > img {
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.result-name {
+  margin-bottom: 10px;
+}
+
+.search {
+  height: fit-content;
+  width: 800px;
+  background-color: white;
+  border-radius: 6px;
+}
+
+.search-box {
+  display: flex;
+}
+
+.search-box > * {
+  border-radius: 3px;
+}
+
+.search-box-input {
+  width: 100%;
+  border: 1px solid #e7e7e7;
+  margin-right: 10px;
+  padding-left: 10px;
+  outline: none;
+  height: 30px;
+}
+
+.search-box-input:focus {
+  border: 2px solid #7159c1;
+}
+
+.search-box-input::placeholder {
+  color: lightgrey;
+}
+
+.search-box-button {
+  background-color: #7159c1;
+  border: none;
+  padding: 3px 12px;
+  display: flex;
+  align-items: center;
+}
+
+.search-box-button:hover {
+  background-color: #594792;
+  cursor: pointer;
+}
+
+.search-title {
+  display: flex;
+  align-content: center;
+}
+
+.search-title h2 {
+  padding-left: 5px;
+  padding-top: 3px;
+}
+
+.search,
+.result {
+  padding: 30px;
+}
