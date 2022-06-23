@@ -1,4 +1,4 @@
-// BUscando o elemento a partir do seu ID e atriabuindo a uma constante para que possamos manipular
+// Buscando o elemento a partir do seu ID e atriabuindo a uma constante para que possamos manipular
 const botao = document.getElementById('submit')
 const resultBox = document.getElementById('result-box')
 const img = document.getElementById('result-img')
@@ -16,6 +16,10 @@ function searchUser() {
       link.innerHTML = res.html_url
       nameGit.innerHTML = res.name
     })
+}
+
+function clear(){
+  document.getElementById('gifs-result').innerHTML=""
 }
 // Após buscarmos o elemento botao, podemos adicionar um evento(searchuser) ao seu click
 botao.addEventListener('click', searchUser)
